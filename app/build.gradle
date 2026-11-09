@@ -14,6 +14,9 @@ android {
     buildTypes {
         release {
             minifyEnabled false
+            // Prototip APK/AAB kurulum testi için debug anahtarı ile imzalanır.
+            // Play Store'a yüklemek için gerçek upload key ile değiştirilmelidir.
+            signingConfig signingConfigs.debug
         }
     }
     compileOptions {
